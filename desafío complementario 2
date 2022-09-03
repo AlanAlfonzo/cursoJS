@@ -1,0 +1,48 @@
+function saludar() {
+    alert("hola tutora");
+}
+   saludar();
+
+   function saludar(){
+    let nombre = prompt("Ingrese el nombre");
+    let mensaje = `buen dia ${nombre}`;
+    alert(mensaje);
+
+    function calculadora(numero1, numero2, operacion) {
+        switch (operacion) {
+          case "+":
+            return numero1 + numero2;
+
+          case "-":
+            return numero1 - numero2;
+           
+
+          default:
+            return "operacion no figurada";
+            
+        }
+      }
+      let numero1 = parseInt(prompt("ingrese numero 1"));
+      let numero2 = parseInt(prompt("ingrese numero 2"));
+      let operacion = prompt("Ingrese la operacion");
+      let resultado = calculadora(numero1, numero2, operacion)
+      
+    alert(resultado);
+
+function despedir() {
+        alert("gracias por evaluar")
+      };
+
+despedir();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+</body>
+</html>
