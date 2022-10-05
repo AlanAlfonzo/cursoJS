@@ -1,0 +1,49 @@
+const zapatillas = [ "  Zapatillas Pureboost 22" , " Zapatillas Futro Mixer " , "Zapatllas Run Falcon 2.0 " ];
+alert ("buen dia, tengo unos cuantos objetos que podrian gustarte, serian estos:" );
+alert (zapatillas) ;
+const respuesta1 = prompt("¿quiere agregar una zapatilla?, (si) (no) ");
+if ( respuesta1 == "si") {
+zapatillas.push(prompt (" aqui puede agregar una zapatilla "));
+Swal.fire(
+    '¡buen trabajo!',
+    '¡haz agregado la zapatilla!',
+    'success'
+  )
+alert (zapatillas) 
+}
+else if (respuesta1 == "no"){
+    Swal.fire({
+        icon: 'error',
+        title: '):',
+        text: '¡no a ingresado ninguna zapatilla!',
+      })
+}
+else {
+    Swal.fire({
+        icon: 'warning',
+        title: '🤨',
+        text: '¡no responde la pregunta!',
+      })
+};
+
+
+// proximamente busqueda por id o nombre.
+
+/* alert ("ahora podra buscar por el nombre el articulo mecionados anteriormente.")
+alert (zapatillas);
+prompt("Ingrese el nombre a encontrar su lugar");
+alert(zapatillas.indexOf(zapatillas)); 
+alert ("muchas gracias no lo molesto mas") */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>incorporando librerias</title>
+</head>
+<body>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
